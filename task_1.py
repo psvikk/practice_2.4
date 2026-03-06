@@ -4,7 +4,7 @@ import requests
 from PIL import Image, ImageTk
 import io
 
-API_KEY = 'YOUR_API_KEY'
+API_KEY = 'fc7fda8066ad1c9db10410d2a950f580'
 
 
 def get_weather(city):
@@ -63,3 +63,4 @@ icon_label = ttk.Label(root)
 icon_label.pack(pady=10)
 
 root.mainloop()
+
