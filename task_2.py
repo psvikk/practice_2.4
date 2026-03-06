@@ -24,7 +24,7 @@ def update_image(image_url):
     response = requests.get(image_url)
     image_data = io.BytesIO(response.content)
     image = Image.open(image_data)
-    image = image.resize((300, 300), Image.ANTIALIAS)  # Измените размер изображения по желанию
+    image = image.resize((300, 300), Image.ANTIALIAS)  
     photo = ImageTk.PhotoImage(image)
 
     image_label.config(image=photo)
@@ -44,3 +44,4 @@ image_label = ttk.Label(root)
 image_label.pack(pady=10)
 
 root.mainloop()
+
